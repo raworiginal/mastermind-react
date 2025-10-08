@@ -1,10 +1,9 @@
 const GameControls = () => {
 	return (
-		<section className="border">
+		<section className="border h-1/4">
 			<div>
-				<button>Hello</button>
+				<button></button>
 			</div>
-			<div>Sumbit</div>
 		</section>
 	);
 };
