@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			<main className="flex w-screen h-screen justify-center items-center">
-				<div className="flex justify-between flex-col rounded-md w-full h-screen">
+				<div className="flex justify-center flex-col rounded-md w-full h-screen">
 					<Header />
 					<GameGrid />
 					<GameControls />
