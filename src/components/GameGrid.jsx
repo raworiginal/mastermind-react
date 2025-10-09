@@ -1,9 +1,12 @@
 import GameRow from "./GameRow";
 
 const GameGrid = () => {
+	const rows = Array.from({ length: 5 });
 	return (
-		<section className="border h-full bg-amber-100">
-			<GameRow />
+		<section className="border flex flex-col">
+			{rows.map((_, idx) => (
+				<GameRow key={idx} />
+			))}
 		</section>
 	);
 };
