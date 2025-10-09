@@ -8,8 +8,10 @@ const GameRow = () => {
 				))}
 			</section>
 			<section className="flex border w-1/5">
-				<div>1</div>
-				<div>2</div>
+				<section>
+					<div></div>
+					<div></div>
+				</section>
 			</section>
 		</div>
 	);
