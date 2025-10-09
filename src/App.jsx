@@ -6,8 +6,8 @@ import Header from "./components/Header";
 function App() {
 	return (
 		<>
-			<main className="flex w-screen h-screen justify-center items-center">
-				<div className="flex justify-center flex-col rounded-md w-full h-screen">
+			<main className="flex justify-center">
+				<div className="flex justify-start flex-col rounded-md h-dvh">
 					<Header />
 					<GameGrid />
 					<GameControls />

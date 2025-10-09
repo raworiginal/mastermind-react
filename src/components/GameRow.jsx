@@ -1,4 +1,3 @@
-import { pegLegend } from "../constants/gameConstants";
 import Peg from "./Peg";
 
 const GameRow = () => {
@@ -7,7 +6,7 @@ const GameRow = () => {
 		<div className="flex items-center h-full">
 			<section className="flex flex-row justify-center gap-2 w-full">
 				{squares.map((_, idx) => (
-					<div key={idx} className="border h-15 aspect-square"></div>
+					<div key={idx} className="border h-20 aspect-square"></div>
 				))}
 			</section>
 			<section className="flex w-1/5 justify-start">
