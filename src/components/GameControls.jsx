@@ -1,19 +1,21 @@
-const GameControls = () => {
-	const btnColors = ["yellow", "orange", "red", "purple", "blue", "green"];
+import { codeColors } from "../constants/gameConstants";
+const GameControls = ({ handleColorBtn }) => {
 	const btnClassList = "btn btn-outline";
 	return (
-		<section className="flex flex-col my-2 space-y-4 items-center">
+		<section className="flex flex-row my-2 space-y-4 items-center">
 			<div className="grid w-4/5 grid-cols-3 gap-4">
-				{btnColors.map((color, idx) => (
+				{codeColors.map((color, idx) => (
 					<div
+						onClick={handleColorBtn}
+						id={color}
 						key={idx}
-						className={`btn btn-wide justify-self-stretch h-20 w-20 bg-${color}-500 hover:outline`}></div>
+						className={`btn btn-wide justify-self-stretch h-20 w-20 ${color} hover:outline`}></div>
 				))}
 			</div>
-			<div className="flex gap-2">
-				<button className={btnClassList}>Delete</button>
-				<button className={btnClassList}>Clear</button>
+			<div className="flex flex-col justify-start space-y-6.5 h-full">
 				<button className={btnClassList}>Submit</button>
+				<button className={btnClassList}>Clear</button>
+				<button className={btnClassList}>Delete</button>
 			</div>
 		</section>
 	);
